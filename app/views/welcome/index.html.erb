@@ -1,0 +1,10 @@
+<h1>Welcome to my Travel Application</h1>
+  <p>
+    This is where I will list things about travel and going places and things.
+  </p>
+
+<% @countries.each do |country| %>
+  <ul class="nada">
+    <li><hr><%= country %><hr><%= image_tag country, width: "200", height: "150" %></li>
+  </ul>
+<% end %>

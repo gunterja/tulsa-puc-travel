@@ -8,7 +8,7 @@
          <h2><%= destination.city %></h2>
          <h3<%= destination.country %></h3>
          <% if destination.photo_file_name != nil %>
-            <%= image_tag destination.photo.url(:medium), class: "img-responsive" %>
+            <%= image_tag destination.photo.url(:large), class: "img-responsive" %>
          <% end %>
          <p><%= destination.description[0..15] %>...<%= link_to "[more]", destination %></p>
 

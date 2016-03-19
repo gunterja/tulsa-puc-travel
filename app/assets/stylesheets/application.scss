@@ -16,4 +16,15 @@
 
 .nada {
   list-style: none;
+  display: inline-block;
+}
+
+.fix {
+  display: inline-block;
+}
+
+#map-canvas {
+  width: 65%;
+  height: 300px;
+  margin-bottom: 2%;
 }

@@ -1,10 +1,16 @@
+<center>
 <h1>Welcome to my Travel Application</h1>
-  <p>
-    This is where I will list things about travel and going places and things.
-  </p>
+  <h3>Built at The Bridge Coworking in Tulsa, OK</h3>
+  <div id="map-canvas"></div>
+</center>
 
-<% @countries.each do |country| %>
-  <ul class="nada">
-    <li><hr><%= country %><hr><%= image_tag country, width: "200", height: "150" %></li>
-  </ul>
-<% end %>
+<center>
+  <h1>Countries I'd like to visit:</h1>
+  <div class="row">
+    <% @countries.each do |country| %>
+        <ul class="nada">
+          <li class="col-md-4"><%= country %><hr><%= image_tag country, width: "200", height: "150" %></li>
+        </ul>
+    <% end %>
+  </div>
+</center>

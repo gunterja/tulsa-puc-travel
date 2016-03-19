@@ -2,7 +2,9 @@
 <div class="container">
   <%= image_tag @destination.photo.url(:medium), class: "img-responsive" %>
 </div>
+<h1><%= @destination.address %></h1>
 
+<p><%= @destination.latitude %>, <%= @destination.longitude %></p>
 <p> <%= @destination.description %></p>
 
 <div class="btn-group">
